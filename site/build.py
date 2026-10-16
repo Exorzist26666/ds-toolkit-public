@@ -33,7 +33,7 @@ nav.links{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}nav.links a{colo
 .hero{padding:64px 0 40px}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .hero h1{font-size:46px;line-height:1.1;margin:0 0 14px;letter-spacing:1px}
 .hero p.lead{color:var(--muted);font-size:18px;margin:0 0 26px}
-.hero .ver{display:inline-block;border:1px solid var(--acc);color:var(--acc);border-radius:20px;padding:2px 12px;font-size:13px;margin-bottom:16px}
+.hero .ver:hover{background:rgba(255,106,43,.12);text-decoration:none}.hero .ver{display:inline-block;border:1px solid var(--acc);color:var(--acc);border-radius:20px;padding:2px 12px;font-size:13px;margin-bottom:16px}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}.hero .small{color:var(--muted);font-size:13px;margin-top:12px}
 .hero img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 section{padding:56px 0;border-top:1px solid var(--line);scroll-margin-top:60px}
@@ -68,11 +68,11 @@ def page(title, body, desc):
     return """<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%s</title><meta name="description" content="%s"><style>%s</style></head><body>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><span>DS</span> TOOLKIT</a>
-<nav class="links"><a href="index.html#funktionen">Funktionen</a><a href="index.html#installation">Installation</a><a href="anleitung.html">Anleitung</a><a href="index.html#updates">Updates</a><a href="%s">GitHub</a></nav>
+<nav class="links"><a href="index.html#funktionen">Funktionen</a><a href="index.html#installation">Installation</a><a href="anleitung.html">Anleitung</a><a href="index.html#updates">Updates</a><a href="%s/blob/main/CHANGELOG.md">Was ist neu?</a><a href="%s">GitHub</a></nav>
 <a class="btn" style="padding:8px 16px" href="%s">Download</a></div></header>
 %s
 <footer><div class="wrap">DS Toolkit %s für DaVinci Resolve Studio · <a href="%s">GitHub</a> · <a href="%s/releases">Alle Versionen</a> · <a href="%s/blob/main/CHANGELOG.md">Änderungen</a></div></footer>
-</body></html>""" % (title, desc, CSS, REPO, DL, body, VER, REPO, REPO, REPO)
+</body></html>""" % (title, desc, CSS, REPO, REPO, DL, body, VER, REPO, REPO, REPO)
 
 CARD_TXT = {
     "medien": "Media Pool nach Format sortieren, Clips umbenennen, Ungenutztes finden und Proxys per Klick erstellen.",
@@ -114,7 +114,7 @@ card_html = "".join('<a class="card" href="anleitung.html#%s"><img src="%s" alt=
                     % (a, i, html.escape(t), html.escape(t), html.escape(x)) for a, t, i, x in cards)
 body = """
 <div class="hero"><div class="wrap"><div>
-<span class="ver">Version %s</span>
+<a class="ver" href="%s/blob/main/CHANGELOG.md" title="Was ist neu in dieser Version?">Version %s · Was ist neu? →</a>
 <h1>Mehr schneiden,<br>weniger klicken.</h1>
 <p class="lead">Ein Werkzeug-Fenster für DaVinci Resolve Studio: Beat-Schnitt auf echte Schläge, animierte Titel, Masken-Übergänge, Video-Effekte, Looks übertragen, Ton angleichen und Doppel-Export – jeweils mit einem Klick.</p>
 <div class="cta"><a class="btn" href="%s">⬇ Download v%s</a><a class="btn ghost" href="anleitung.html">Anleitung ansehen</a></div>
@@ -146,7 +146,7 @@ Falls etwas nicht automatisch klappt, sagt das Setup genau, was fehlt – dann <
 Danach das Toolkit-Fenster schließen und neu öffnen.</p>
 <div class="cta" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn ghost" href="%s/releases">Alle Versionen</a><a class="btn ghost" href="%s/blob/main/CHANGELOG.md">Was ist neu?</a></div>
 </div></section>
-""" % (VER, DL, VER, card_html, DL, VER, REPO, REPO)
+""" % (REPO, VER, DL, VER, card_html, DL, VER, REPO, REPO)
 open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
     "DS Toolkit für DaVinci Resolve", body, "Werkzeug-Fenster für DaVinci Resolve Studio – Beat-Schnitt, Titel, Masken, Effekte, Audio und Export"))
 open(os.path.join(OUT, ".nojekyll"), "w").write("")
