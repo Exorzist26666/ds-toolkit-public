@@ -1,0 +1,37 @@
+name: Release erstellen
+
+# Legt für jede neue Datei dist/DS-Toolkit-v<VERSION>.dsupdate ein Release an:
+# Update-Datei + Vollinstallation (Setup.zip wird hier gebaut), Text aus CHANGELOG.md.
+on:
+  push:
+    branches: [main]
+    paths: ["dist/*.dsupdate"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Releases anlegen
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          for f in dist/DS-Toolkit-v*.dsupdate; do
+            [ -e "$f" ] || continue
+            ver=$(basename "$f" .dsupdate); ver=${ver#DS-Toolkit-v}
+            if gh release view "v$ver" >/dev/null 2>&1; then echo "v$ver existiert schon"; continue; fi
+            work=$(mktemp -d)
+            mkdir -p "$work/DS-Toolkit/paket"
+            unzip -q "$f" -d "$work/DS-Toolkit/paket"
+            cp installer/* "$work/DS-Toolkit/"
+            cp CHANGELOG.md "$work/DS-Toolkit/"
+            setup="$PWD/DS-Toolkit-Setup-v$ver.zip"
+            (cd "$work" && zip -qr "$setup" DS-Toolkit)
+            awk -v h="## v$ver" 'index($0, h) == 1 {on=1; next} on && /^## v/ {exit} on && /^---/ {next} on {print}' CHANGELOG.md > notes.md
+            gh release create "v$ver" "$f" "$setup" --title "DS Toolkit $ver" --notes-file notes.md --latest --target "$GITHUB_SHA"
+          done

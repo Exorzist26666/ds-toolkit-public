@@ -1,0 +1,43 @@
+﻿DS TOOLKIT für DaVinci Resolve Studio
+=====================================
+
+INSTALLATION
+1. ZIP entpacken.
+2. DaVinci Resolve schließen.
+3. INSTALL.bat doppelklicken (fragt einmal nach Admin-Rechten für die Color-Tools).
+4. Resolve starten -> Workspace > Scripts > DS Toolkit
+
+UPDATE
+Im Toolkit: Tab „Info“ > Toolkit-Update
+ - „Nach Updates suchen“ -> holt die neueste Version von GitHub
+ - „Update-Datei installieren …“ -> .dsupdate-Datei wählen
+Danach das Toolkit-Fenster schließen und neu öffnen. Bei neuen Titeln/Effekten Resolve neu starten.
+
+DEINSTALLIEREN
+DEINSTALLIEREN.bat (Einstellungen bleiben erhalten)
+
+ANLEITUNG
+Im Toolkit: Tab „Info“ > „Anleitung öffnen“ (bebildert, auch offline).
+Kurzinfo: Maus kurz auf einen Regler halten. „?“ neben jeder Überschrift = Anleitung zum Bereich.
+
+WO FINDE ICH WAS?
+Toolkit-Fenster ........ Workspace > Scripts > DS Toolkit
+Titel (Text) ........... Edit-Seite > Effects > Titles > Fusion Titles > „DS …“
+Fusion-Effekte ......... Edit-Seite > Effects > Toolbox > Fusion Effects > „DS …“ / „DS FX …“
+Color-Tools (DCTL) ..... Color-Seite > Effects > DCTL > DS Toolkit
+Masken-Dateien ......... %APPDATA%\DS-Toolkit\assets\masks
+Anleitung .............. %APPDATA%\DS-Toolkit\assets\docs\Anleitung.html
+
+TABS (Reihenfolge = Arbeitsablauf)
+Medien    sortieren, umbenennen, aufräumen, Proxys
+Schnitt   Stille entfernen, Beat-Schnitt
+Timeline  farbige Beat-Marker, Varianten, Statistik, Marker-Werkzeuge
+Text      animierte Titel am Playhead
+Masken    Masken-Übergänge (Ink, Rauch, Pinsel …)
+FX        Video-Effekte auf den Clip am Playhead
+Color     Look kopieren/einfügen, .drx-Looks, LUTs
+Audio     Lautheit messen/normalisieren, Ton aufbereiten
+Export    Doppel-Export (Master + Kompakt), Standbild
+Info      Anleitung, Updates
+
+Versionen: fertige Versionen = kurze Nummer (1.9), Test-Stände = 4. Stelle (1.9.0.4).
