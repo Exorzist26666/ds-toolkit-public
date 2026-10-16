@@ -2,7 +2,7 @@
 
 Ein Werkzeug-Fenster für **DaVinci Resolve Studio**, das wiederkehrende Arbeit abnimmt – vom Sortieren der Medien über den Schnitt auf den Beat bis zum doppelten Export für Instagram und WhatsApp.
 
-**Aktuelle Version: 1.9** · **[⬇️ Download (Setup.zip)](../../releases/latest/download/DS-Toolkit-Setup-v1.9.zip)** · [Alle Versionen](../../releases)
+**Aktuelle Version: 1.9** · **[🌐 Webseite](https://exorzist26666.github.io/ds-toolkit-public/)** · **[⬇️ Download (Setup.zip)](../../releases/latest/download/DS-Toolkit-Setup-v1.9.zip)** · [Alle Versionen](../../releases)
 
 <p align="center"><img src="docs/img/02-schnitt.png" width="380"> <img src="docs/img/05-masken.png" width="380"></p>
 
