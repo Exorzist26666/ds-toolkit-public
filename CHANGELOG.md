@@ -7,24 +7,23 @@ Hier stehen alle **fertigen Versionen** mit ihren Neuerungen. Jede Version gibt 
 ## v2.0 – 17.10.2026
 
 ### Neu
-- **Neues Logo** (Timeline mit Abspielkopf) im Toolkit-Fenster, auf der Website und in der Anleitung.
-- **Auf den Beat schneiden in 3 Schritten** (Tab Schnitt): Beat-Marker setzen → Marker selbst verschieben, löschen oder ergänzen → **Schnitt nach Markern**.
-- **Takt-Raster wie bei Profi-Plugins:** Tempo und Takt werden erkannt. Muster *jeder Beat, Beat + Offbeat, halbe Zeit, jeder Takt, jeder 2. Takt* und **automatisch nach Energie** (laute Stellen schneller).
-- **Material beim Schnitt nach Markern:** Video-Spur 1 der Reihe nach, Video-Spur 1 gemischt (kein Ausschnitt doppelt) oder markierte Clips im Media Pool.
+- **Neues Logo** im Toolkit-Fenster, auf der Website und in der Anleitung.
+- **Auf den Beat schneiden in 3 Schritten** (Tab Schnitt): Beat-Marker automatisch setzen → Marker selbst verschieben, löschen oder ergänzen → **Schnitt nach Markern**.
+- **Takt-Raster:** Tempo und Takt des Songs werden erkannt. Muster *jeder Beat, Beat + Offbeat, halbe Zeit, jeder Takt, jeder 2. Takt* und **automatisch nach Energie** (laute Stellen schneller geschnitten).
+- **Material beim Schnitt nach Markern:** Clips von Video-Spur 1 der Reihe nach, gemischt (kein Ausschnitt doppelt) oder die markierten Clips im Media Pool.
 - Marker-Versatz in Frames, **alle Marker verschieben**, Tempo halb/doppelt.
 - **Jeder Tab hat seine eigene Farbe** – Reiter, Akzentlinie und Hauptbuttons passen zum Bereich, wie im Protokoll.
 
 ### Verbessert
-- **Neue Schlag-Erkennung:** Kick/808, Clap/Snare und Hi-Hat werden mit 1 ms Genauigkeit gefunden – auch bei Bass-lastigen Songs.
-- Das Takt-Raster richtet sich an Clap und Kick aus und liegt auf den Schlägen statt dazwischen.
+- **Genauere Schlag-Erkennung:** Kick/Bass, Clap/Snare und Hi-Hat werden zuverlässiger erkannt und genauer auf den Anschlag gesetzt.
+- Das Takt-Raster richtet sich an Kick und Clap aus.
+- Schnitte liegen bildgenau auf den Markern.
 - Projekt- und Timeline-Zeile oben ist farbig hervorgehoben.
-- Neue, neutrale Vorschauen bei Text, Masken und FX.
+- Neue Vorschauen bei Text, Masken und FX.
 - Beat-Marker und Marker-Werkzeuge sind vom Tab Timeline in den Tab Schnitt umgezogen.
 
 ### Behoben
-- Ungenaue Beat-Schnitte: Das Raster wanderte über den Song weg, Marker saßen teils bis zu 100 ms neben dem Schlag.
-- Bass-Brummen wurde als Snare oder Hi-Hat markiert.
-- Versatz bei Clips mit anderer Bildrate (z. B. 60-fps-Material auf 24-fps-Timeline).
+- Beat-Schnitte und Beat-Marker saßen teils nicht genau auf dem Schlag.
 
 ---
 

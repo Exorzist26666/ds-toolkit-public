@@ -5,7 +5,7 @@ name: Release erstellen
 on:
   push:
     branches: [main]
-    paths: ["dist/*.dsupdate"]
+    paths: ["dist/*.dsupdate", "CHANGELOG.md"]
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
           for f in dist/DS-Toolkit-v*.dsupdate; do
             [ -e "$f" ] || continue
             ver=$(basename "$f" .dsupdate); ver=${ver#DS-Toolkit-v}
-            if gh release view "v$ver" >/dev/null 2>&1; then echo "v$ver existiert schon"; continue; fi
+            exists=0; gh release view "v$ver" >/dev/null 2>&1 && exists=1
             work=$(mktemp -d)
             mkdir -p "$work/DS-Toolkit/paket"
             unzip -q "$f" -d "$work/DS-Toolkit/paket"
@@ -33,5 +33,11 @@ jobs:
             setup="$PWD/DS-Toolkit-Setup-v$ver.zip"
             (cd "$work" && zip -qr "$setup" DS-Toolkit)
             awk -v h="## v$ver" 'index($0, h) == 1 {on=1; next} on && /^## v/ {exit} on && /^---/ {next} on {print}' CHANGELOG.md > notes.md
-            gh release create "v$ver" "$f" "$setup" --title "DS Toolkit $ver" --notes-file notes.md --latest --target "$GITHUB_SHA"
+            if [ "$exists" = "1" ]; then
+              # vorhandenes Release: Beschreibung und Dateien aktualisieren
+              gh release edit "v$ver" --notes-file notes.md
+              gh release upload "v$ver" "$f" "$setup" --clobber
+            else
+              gh release create "v$ver" "$f" "$setup" --title "DS Toolkit $ver" --notes-file notes.md --latest --target "$GITHUB_SHA"
+            fi
           done
