@@ -1,5 +1,7 @@
 # DS Toolkit – Anleitung
 
+<img src="img/logo_dark.png" alt="ds toolkit" width="360">
+
 Das DS Toolkit ist ein Werkzeug-Fenster für **DaVinci Resolve Studio**. Es nimmt dir wiederkehrende Arbeit ab: Medien sortieren, auf den Beat schneiden, Titel, Masken-Übergänge und Effekte einbauen, Looks übertragen, Ton angleichen und doppelt exportieren.
 
 **Öffnen:** In Resolve oben im Menü **Workspace › Scripts › DS Toolkit**.
@@ -11,8 +13,8 @@ Das DS Toolkit ist ein Werkzeug-Fenster für **DaVinci Resolve Studio**. Es nimm
 | Tab | Wofür | Anleitung |
 |---|---|---|
 | **Medien** | Media Pool sortieren, umbenennen, aufräumen, Proxys | [01 – Medien](01-medien.md) |
-| **Schnitt** | Stille entfernen, Beat-Schnitt | [02 – Schnitt](02-schnitt.md) |
-| **Timeline** | Farbige Beat-Marker, Varianten, Statistik, Marker-Werkzeuge | [03 – Timeline](03-timeline.md) |
+| **Schnitt** | Stille entfernen, Beat-Marker, Marker bearbeiten, Schnitt nach Markern | [02 – Schnitt](02-schnitt.md) |
+| **Timeline** | Varianten, Statistik | [03 – Timeline](03-timeline.md) |
 | **Text** | Animierte Text+-Titel am Playhead | [04 – Text](04-text.md) |
 | **Masken** | Masken-Übergänge (Ink, Rauch, Pinsel …) | [05 – Masken](05-masken.md) |
 | **FX** | Video-Effekte (Shake, Glitch, Zoom Punch …) | [06 – Video-FX](06-video-fx.md) |
@@ -39,7 +41,7 @@ Das DS Toolkit ist ein Werkzeug-Fenster für **DaVinci Resolve Studio**. Es nimm
 
 ## Grundregeln
 
-- Das Toolkit **löscht nie Dateien**. Werkzeuge, die stark eingreifen (Stille entfernen, Beat-Schnitt), legen eine **neue Timeline** an – das Original bleibt.
+- Das Toolkit **löscht nie Dateien**. Werkzeuge, die stark eingreifen (Stille entfernen, Schnitt nach Markern), legen eine **neue Timeline** an – das Original bleibt.
 - Viele Werkzeuge arbeiten mit dem **Playhead** (der rote Strich in der Timeline) oder mit **markierten Clips** (anklicken, Strg+Klick für mehrere).
 - Nach einem Update: Toolkit-Fenster schließen und neu öffnen. Bei neuen Titeln/Effekten Resolve einmal neu starten.
 

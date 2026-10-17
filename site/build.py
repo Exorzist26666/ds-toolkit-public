@@ -66,8 +66,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 
 def page(title, body, desc):
     return """<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>%s</title><meta name="description" content="%s"><style>%s</style></head><body>
-<header class="top"><div class="wrap"><a class="brand" href="index.html"><span>DS</span> TOOLKIT</a>
+<title>%s</title><meta name="description" content="%s"><link rel="icon" type="image/png" href="img/icon_32.png"><link rel="apple-touch-icon" href="img/icon_256.png"><style>%s</style></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="img/logo_dark.png" alt="ds toolkit" style="height:38px;display:block"></a>
 <nav class="links"><a href="index.html#funktionen">Funktionen</a><a href="index.html#installation">Installation</a><a href="anleitung.html">Anleitung</a><a href="index.html#updates">Updates</a><a href="%s/blob/main/CHANGELOG.md">Was ist neu?</a><a href="%s">GitHub</a></nav>
 <a class="btn" style="padding:8px 16px" href="%s">Download</a></div></header>
 %s
@@ -76,8 +76,8 @@ def page(title, body, desc):
 
 CARD_TXT = {
     "medien": "Media Pool nach Format sortieren, Clips umbenennen, Ungenutztes finden und Proxys per Klick erstellen.",
-    "schnitt": "Stille automatisch rausschneiden oder Clips auf echte Schläge des Songs schneiden – Kick, Snare, Hi-Hat, Drops.",
-    "timeline": "Farbige Beat-Marker zum Einrasten, Varianten der Timeline und eine Schnitt-Statistik.",
+    "schnitt": "Stille rausschneiden und auf den Beat schneiden: Marker automatisch setzen, selbst nachbessern, dann genau auf die Marker schneiden.",
+    "timeline": "Varianten der Timeline anlegen und eine Schnitt-Statistik anzeigen.",
     "text": "8 animierte Titel – Impact, Glitch, Neon, Chrome & Co. – per Klick am Playhead, im Inspector frei bearbeitbar.",
     "masken": "8 Masken-Übergänge wie Ink Splash oder Smoke: Der neue Clip erscheint in Form der Maske.",
     "video-fx": "8 Effekte wie Kamera-Shake, Glitch, Zoom Punch oder VHS – direkt auf den Clip, ideal auf den Beat.",
@@ -116,7 +116,7 @@ body = """
 <div class="hero"><div class="wrap"><div>
 <a class="ver" href="%s/blob/main/CHANGELOG.md" title="Was ist neu in dieser Version?">Version %s · Was ist neu? →</a>
 <h1>Mehr schneiden,<br>weniger klicken.</h1>
-<p class="lead">Ein Werkzeug-Fenster für DaVinci Resolve Studio: Beat-Schnitt auf echte Schläge, animierte Titel, Masken-Übergänge, Video-Effekte, Looks übertragen, Ton angleichen und Doppel-Export – jeweils mit einem Klick.</p>
+<p class="lead">Ein Werkzeug-Fenster für DaVinci Resolve Studio: Beat-Schnitt mit Takt-Raster und eigenen Markern, animierte Titel, Masken-Übergänge, Video-Effekte, Looks übertragen, Ton angleichen und Doppel-Export – jeweils mit einem Klick.</p>
 <div class="cta"><a class="btn" href="%s">⬇ Download v%s</a><a class="btn ghost" href="anleitung.html">Anleitung ansehen</a></div>
 <p class="small">Windows 10/11 · DaVinci Resolve Studio · kostenlos · Updates per Klick</p>
 </div><img src="img/02-schnitt.png" alt="DS Toolkit – Tab Schnitt"></div></div>

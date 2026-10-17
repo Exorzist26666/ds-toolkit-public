@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/img/logo_dark.png" alt="ds toolkit" width="420"></p>
+
 # DS Toolkit für DaVinci Resolve
 
 Ein Werkzeug-Fenster für **DaVinci Resolve Studio**, das wiederkehrende Arbeit abnimmt – vom Sortieren der Medien über den Schnitt auf den Beat bis zum doppelten Export für Instagram und WhatsApp.
@@ -8,8 +10,8 @@ Ein Werkzeug-Fenster für **DaVinci Resolve Studio**, das wiederkehrende Arbeit 
 
 **Was es kann**
 - **Medien** sortieren, umbenennen, aufräumen, Proxys per Klick
-- **Schnitt:** Stille entfernen, Beat-Schnitt auf echte Schläge (Kick, Snare, Hi-Hat, Drops)
-- **Timeline:** farbige Beat-Marker, Varianten, Statistik
+- **Schnitt:** Stille entfernen · auf den Beat schneiden in 3 Schritten: Beat-Marker setzen (Takt-Raster oder einzelne Schläge), Marker selbst nachbessern, genau auf die Marker schneiden
+- **Timeline:** Varianten, Statistik
 - **Text:** 8 animierte Text+-Titel · **Masken:** 8 Masken-Übergänge (Ink, Rauch, Pinsel …) · **FX:** 8 Video-Effekte (Shake, Glitch, Zoom Punch …)
 - **Color:** Look kopieren/einfügen, .drx-Looks und LUTs auf viele Clips
 - **Audio:** Lautheit messen und normalisieren, Ton aufbereiten (Klarheit, Rauschen, Ausgleichen)
