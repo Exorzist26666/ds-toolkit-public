@@ -4,16 +4,18 @@
 
 Ein Werkzeug-Fenster für **DaVinci Resolve Studio**, das wiederkehrende Arbeit abnimmt – vom Sortieren der Medien über den Schnitt auf den Beat bis zum doppelten Export für Instagram und WhatsApp.
 
-**Aktuelle Version: 2.0** · **[🌐 Webseite](https://exorzist26666.github.io/ds-toolkit-public/)** · **[⬇️ Download (Setup.zip)](../../releases/latest/download/DS-Toolkit-Setup-v2.0.zip)** · [Alle Versionen](../../releases)
+**Aktuelle Version: 2.1** · **[🌐 Webseite](https://exorzist26666.github.io/ds-toolkit-public/)** · **[⬇️ Download (Setup.zip)](../../releases/latest/download/DS-Toolkit-Setup-v2.1.zip)** · [Alle Versionen](../../releases)
 
 <p align="center"><img src="docs/img/02-schnitt.png" width="380"> <img src="docs/img/05-masken.png" width="380"></p>
 
 **Was es kann**
 - **Medien** sortieren, umbenennen, aufräumen, Proxys per Klick
-- **Schnitt:** Stille entfernen · auf den Beat schneiden in 3 Schritten: Beat-Marker setzen (Takt-Raster oder einzelne Schläge), Marker selbst nachbessern, genau auf die Marker schneiden
+- **Schnitt:** Stille entfernen · auf den Beat schneiden in 3 Schritten (Beat-Marker setzen, nachbessern, genau auf die Marker schneiden) · **Speedramp** mit 13 Verläufen und eigenem Kurven-Editor
 - **Timeline:** Varianten, Statistik
-- **Text:** 8 animierte Text+-Titel · **Masken:** 8 Masken-Übergänge (Ink, Rauch, Pinsel …) · **FX:** 8 Video-Effekte (Shake, Glitch, Zoom Punch …)
-- **Color:** Look kopieren/einfügen, .drx-Looks und LUTs auf viele Clips
+- **Text:** animierte Text+-Titel · **Font Scramble** (Text wechselt animiert durch Schriften)
+- **Masken:** **Schnitt-Übergänge** ohne Überlappung (Whip Pan, Zoom, Spin, Glitch …) · Masken-Übergänge (Ink, Rauch, Pinsel …) · **Shape- und Kachel-Reveals** · **Portal** · **Light Leaks & Flashes**
+- **FX:** Video-Effekte (Shake, Glitch, Zoom Punch, **Lens Streak** …)
+- **Color:** **Look-Bibliothek** (Golden Hour, Teal & Orange, Film, Day-for-Night, Color Pop …) · Look kopieren/einfügen · .drx-Looks und LUTs auf viele Clips · Clip Check (Belichtung)
 - **Audio:** Lautheit messen und normalisieren, Ton aufbereiten (Klarheit, Rauschen, Ausgleichen)
 - **Export:** Master in voller Qualität + kompakte Datei mit Größen-Limit
 
@@ -22,7 +24,7 @@ Ein Werkzeug-Fenster für **DaVinci Resolve Studio**, das wiederkehrende Arbeit 
 ## 🛠️ Installation
 
 ### 1. Herunterladen
-**[DS-Toolkit-Setup-v2.0.zip herunterladen](../../releases/latest/download/DS-Toolkit-Setup-v2.0.zip)** – oder unter **[Releases](../../releases/latest)** die Datei **`DS-Toolkit-Setup-v…zip`** wählen (die `.dsupdate`-Datei ist nur für Updates).
+**[DS-Toolkit-Setup-v2.1.zip herunterladen](../../releases/latest/download/DS-Toolkit-Setup-v2.1.zip)** – oder unter **[Releases](../../releases/latest)** die Datei **`DS-Toolkit-Setup-v…zip`** wählen (die `.dsupdate`-Datei ist nur für Updates).
 
 ### 2. Installieren
 1. ZIP entpacken (Rechtsklick › *Alle extrahieren*).
@@ -67,7 +69,7 @@ Deine Einstellungen liegen in `%APPDATA%\DS-Toolkit\settings.json` und bleiben b
 ---
 
 ## 🔄 Updates
-Im Toolkit: Tab **Info › Nach Updates suchen** – lädt die neueste Version von hier und installiert sie. Kein Konto, keine Anmeldung nötig.
+Im Toolkit: Tab **Info › Nach Updates suchen** – lädt die neueste Version von hier und installiert sie. Ab 2.1 werden nur noch die geänderten Teile geladen (meist wenige hundert KB). Kein Konto, keine Anmeldung nötig.
 
 Danach das Toolkit-Fenster schließen und neu öffnen (bei neuen Titeln/Effekten Resolve einmal neu starten). Ältere Versionen bleiben unter **[Releases](../../releases)** abrufbar.
 

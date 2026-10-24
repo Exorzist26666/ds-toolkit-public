@@ -13,3 +13,6 @@ Effekte direkt im Clip: Handheld, Impact Shake, Glitch, Zoom Punch, Whip Zoom, R
 - **Bearbeiten:** Clip markieren › Fusion-Seite › Node *DS…Ctl* anklicken › Regler im Inspector.
 - Mehrere Effekte pro Clip sind möglich. **DS-Effekte entfernen** nimmt alle wieder heraus.
 - Alternativ unter *Effects › Toolbox › Fusion Effects* („DS FX …“) reinziehen – dann sind die Regler direkt im Inspector der Edit-Seite.
+
+## Lens Streak
+Anamorphe Lichtstreifen aus allen hellen Stellen (Scheinwerfer, Lampen, Reflexe). Regler: **Intensität**, **Schwelle** (nur das Hellste), **Länge**, **Dicke**, **Winkel**, **Sternfilter** (Kreuz), **Farbe** (Rot/Grün/Blau), **Halo**.

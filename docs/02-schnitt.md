@@ -65,3 +65,11 @@ Schneidet **genau auf die Marker** der aktuellen Timeline – auch auf die, die 
 - **Clip-Einstieg:** ab Clipanfang, ab 10 % oder ab Mitte.
 - Jeder Clip wird **bildgenau** auf seinen Marker gelegt – auch bei 50/60-fps-Material auf 24/25-fps-Timelines summiert sich kein Versatz auf.
 - **Alles in einem** = Marker setzen und sofort schneiden.
+
+## Speedramp
+Playhead auf den Clip, **Verlauf** wählen (Speed Up, Slow Down, Fast-Slow-Fast, Push, Boomerang, Mid Reverse, Freeze …), **Langsam/Schnell** in % einstellen → **Speedramp auf Clip**.
+- **Gleicher Inhalt:** Der Clip bleibt gleich lang und endet auf demselben Bild – der Ramp verteilt nur die Zeit um. Aus: Tempi gelten absolut.
+- **Umkehren / Spiegeln** drehen den Verlauf um.
+- **Kurven-Editor ...:** eigenes Fenster – Punkte und Bézier-Griffe ziehen, Presets als Kacheln laden, **Übernehmen** legt die Kurve auf den Clip (braucht Python 3).
+- **Feinschliff alternativ:** Fusion-Seite › Node *DSRamp_Time* › Regler **Tempo** im Spline-Editor mit Bézier-Griffen ändern, dann auf der Edit-Seite **Kurve übernehmen**.
+- **Entfernen** nimmt den Ramp wieder heraus.

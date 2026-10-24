@@ -4,6 +4,25 @@ Hier stehen alle **fertigen Versionen** mit ihren Neuerungen. Jede Version gibt 
 
 ---
 
+## v2.1 – 24.10.2026
+
+### Neu
+- **Speedramp** (Tab Schnitt): 13 Verläufe (Speed Up, Slow Down, Fast-Slow-Fast, Boomerang, Freeze …), Umkehren/Spiegeln und ein eigener **Kurven-Editor** mit ziehbaren Punkten und Bézier-Griffen.
+- **Font Scramble** (Tab Text): Text wechselt animiert durch verschiedene Schriften – ganzes Wort, einzelne Buchstaben oder ein einzelnes Wort, auf Wunsch mit Symbolschriften.
+- **Lens Streak** (Tab FX): Lichtstreifen auf hellen Stellen.
+- **Schnitt-Übergänge** (Tab Masken): Whip Pan, Slide Blur, Zoom In, Zoom Out, Spin, Zoom Spin, Glitch Cut, Flash Cut – direkt auf einen harten Schnitt, ohne Überlappung, mit Bewegungsunschärfe.
+- **Shape Reveals** (Balken, Chevron, Rauten, Kreise, Iris, Jalousie, Dreiecke, Schlitz) und **Kachel-Reveals** (Zufall, Treppe, Mitte, Spirale, Zeilen, Fein) in 4K für 16:9 und 9:16.
+- **Portal-Übergang:** Ein Kreis öffnet sich, der nächste Clip zoomt aus dem Portal heran.
+- **Light Leaks & Flashes:** 8 Lichteffekte (Warm Leak, Golden Flare, Film Burn, White Flash …) mit Höhepunkt am Playhead, auf eigener Spur.
+- **Look-Bibliothek** (Tab Color): 14 fertige Looks plus Day-for-Night, Color Pop, Atmosphäre und Clarity – mit Stärke-Regler und Vorher/Nachher-Vorschau. Deine eigenen Grades bleiben unverändert.
+- **Clip Check** (Tab Color): Belichtungswarnung für abgesoffene Schatten und ausgebrannte Lichter.
+
+### Verbessert
+- **Kleinere Updates:** Ab jetzt werden nur noch die Teile geladen, die sich geändert haben – meist wenige hundert KB statt des kompletten Pakets. (Das Update von 2.0 auf 2.1 wird noch einmal komplett geladen.)
+- Anleitung um alle neuen Funktionen ergänzt.
+
+---
+
 ## v2.0 – 17.10.2026
 
 ### Neu
